@@ -37,7 +37,7 @@ var dx = 0.1;
 var dy = -0.1;
 const ballRadius = 10;
 var paddleHeight = 15;
-var paddleWidth = 75;
+var paddleWidth = 100;
 var paddleX = (canvas.width - paddleWidth) / 2;
 var rightPressed = false;
 var leftPressed = false;
@@ -172,9 +172,9 @@ function draw() {
     drawPaddle();
     
     if (rightPressed && paddleX < canvas.width - paddleWidth) {
-        paddleX += 7;
+        paddleX += 100;
     } else if (leftPressed && paddleX > 0) {
-        paddleX -= 7;
+        paddleX -= 100;
     }
 
     drawBricks();
